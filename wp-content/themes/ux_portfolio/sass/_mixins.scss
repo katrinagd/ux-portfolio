@@ -10,3 +10,17 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Container width
+@mixin container {
+	margin-left: auto;
+	margin-right: auto;
+	width: $container-width;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -3,3 +3,32 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.gallery-bg {
+	
+   
+   /* change background position to fixed for parallax-y effect */
+   background:
+       // linear-gradient( top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ),
+       #fff url('http://localhost:3000/ux/wp-content/themes/ux_portfolio/images/portfolio-banner.jpg') fixed center no-repeat;
+   height: 250px;
+   background-size: 100%;
+   color: white;
+}
+
+// Skiills page About
+
+.technical {
+
+}
+.teal-bg {
+	background: #2D6B7A;
+	.soft {
+		color: #fff;
+		h1{
+		color: #fff;
+		}
+
+}
+}
+
+

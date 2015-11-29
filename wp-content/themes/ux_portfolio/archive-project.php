@@ -19,26 +19,33 @@ get_header(); ?>
             ?>
          </header><!-- .page-header -->
 
-         <?php /* Start the Loop */ ?>
+
+<?php /* Start the Loop */ ?>
          <?php while ( have_posts() ) : the_post(); ?>
 
-            <?php
-               get_template_part( 'template-parts/content' );
-            ?>
+            
+               <div>  
+               <?php if ( has_post_thumbnail() ) : ?>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                     <?php endif; ?>
+                     <h1><?php the_title(); ?></h1>
+                     <?php echo CFS()->get('project_intro'); ?>
+                     <a href="<?php the_permalink(); ?>"><div>Read more...</div></a>
+               </div>
+               
+               
+                     
+            
 
          <?php endwhile; ?>
 
-         <?php the_posts_navigation( array(
-            'prev_text' => 'Older Posts &rarr;',
-            'next_text' => '&larr; Newer Posts',
-         ) ); ?>
+         <?php the_posts_navigation(); ?>
 
       <?php else : ?>
 
          <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
       <?php endif; ?>
-
       </main><!-- #main -->
    </div><!-- #primary -->
 

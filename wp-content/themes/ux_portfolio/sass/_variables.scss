@@ -1,6 +1,9 @@
 // Structure
 
 $base__space-unit: 1.5em;
+$container-width: 100%;
+$base__border: 1px solid #e1e1e1;
+$base__border-dashed: 1px dashed #d2d2d2;
 
 // Colors
 
@@ -21,7 +24,7 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: 'Nunito', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

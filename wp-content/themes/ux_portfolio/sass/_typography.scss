@@ -13,16 +13,36 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+
+
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'Open Sans', sans-serif;
+	
+
 }
 
+h1 {
+		font-size: 38px;
+		text-transform: uppercase;
+		line-height: 1;
+	    font-weight: bolder;
+	    color: black;
+	}
+
+
+.title {
+	color: #D0A947 ;
+	margin-left: -50px;
+}
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-weight: lighter;
+	line-height: 2;
 }
 
 dfn, cite, em, i {

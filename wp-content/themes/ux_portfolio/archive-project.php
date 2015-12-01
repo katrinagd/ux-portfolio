@@ -14,24 +14,30 @@ get_header(); ?>
 
          <header class="page-header">
             <?php
-               the_archive_title( '<h1 class="page-title">', '</h1>' );
                the_archive_description( '<div class="taxonomy-description">', '</div>' );
             ?>
+            <h1><span class="title">// </span>Portfolio</h1>
          </header><!-- .page-header -->
 
 
 <?php /* Start the Loop */ ?>
          <?php while ( have_posts() ) : the_post(); ?>
 
-            
-               <div>  
+            <ul class="project">
+                
                <?php if ( has_post_thumbnail() ) : ?>
-                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+               <li>
+                     
+                        <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
+         <?php the_post_thumbnail( 'medium' ); ?>
+      <?php endif; ?></a>
                      <?php endif; ?>
-                     <h1><?php the_title(); ?></h1>
+                     <span class="project-preview"><h2><?php the_title(); ?></h2>
                      <?php echo CFS()->get('project_intro'); ?>
-                     <a href="<?php the_permalink(); ?>"><div>Read more...</div></a>
-               </div>
+                     <span class="btn"><a href="<?php the_permalink(); ?>">Read more...</span></a></span>
+               </li>
+            
+               </ul>
                
                
                      

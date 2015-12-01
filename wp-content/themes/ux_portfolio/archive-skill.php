@@ -16,6 +16,7 @@ get_header(); ?>
  *  -->
  <div class="technical">
 <h1><span class="title">// </span>Technical skills</h1>
+<div class="line"></div>
 <?php
             $softargs = array( 
               'post_type'=>'skill',
@@ -49,6 +50,7 @@ get_header(); ?>
  <div class="teal-bg">
    <div class="content-area soft">
     <h1><span class="title">// </span>Soft  skills</h1> 
+    <div class="line"></div>
           <?php
             $softargs = array( 
               'post_type'=>'skill',

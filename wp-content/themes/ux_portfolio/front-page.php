@@ -15,30 +15,40 @@ get_header(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+			<div class="entry-content">
+				<?php the_content(); ?>
+				<?php
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+						'after'  => '</div>',
+					) );
+				?>
+			</div><!-- .entry-content -->
+        </article><!-- #post-## -->
 
+<?php endwhile; // End of the loop. ?>
+</div>   
+	  <section id="portfolio">
+	  </section>
 
-	<?php endwhile; // End of the loop. ?>
-</div>      
       <section class="gallery-bg">
-       
       </section>
-<div id="primary" class="content-area">
-	<section>
-		<div>
-			<h1>Testimonials</h1>
-		</div>
 
-		<ul>
+      <section id="portfolio" class="content-area">
+      </section>
+
+      <section id="contact" class="content-area">
+      <h1><span class="title">// </span>Contact</h1>
+      <?php echo do_shortcode( '[contact-form-7 id="19" title="Contact form 1"]' ); ?>
+      </section>
+
+      <div class="teal-bg">
+        <div id="primary" class="content-area soft">
+	    <section class="testimonials">
+			
+				<h1><span class="title">// </span>Testimonials</h1>
+	
+		<ul id="slidebx">
 			<?php
 			$args = array( 
 				'post_type'=>'testimonial',
@@ -50,14 +60,14 @@ get_header(); ?>
 			<li>
 				<?php echo wp_get_attachment_image( CFS()->get( 'headshot' ), array( 100, 100 ) ); ?>
 
-				<div>
+				<div class="review-content">
 					<?php echo CFS()->get( 'review_content' ); ?>
-					<p><?php the_title(); ?></p>
-					<p><?php echo esc_html( CFS()->get( 'job_title' ) ); ?> &ndash; <?php echo CFS()->get( 'company' ); ?></p>
+					<p><span class="reviewer-name">&ndash; <?php the_title(); ?>&#44; </span><span class="reviewer-creds"><?php echo esc_html( CFS()->get( 'job_title' ) ); ?><?php echo CFS()->get( 'company' ); ?></p>
 				</div>
 			</li>
 		<?php endforeach; wp_reset_postdata(); ?>
 	    </ul>
+	     </div>
     </section>
 </main><!-- #main -->
 </div><!-- #primary -->

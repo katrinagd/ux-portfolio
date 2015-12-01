@@ -18,7 +18,7 @@
 <div class="entry-content">
 	<h1><?php the_title(); ?></h1>
 	<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'medium' ); ?>
 		<?php endif; ?>
 
 	

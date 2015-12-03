@@ -16,7 +16,7 @@ get_header(); ?>
             <?php
                the_archive_description( '<div class="taxonomy-description">', '</div>' );
             ?>
-            <h1><span class="title">// </span>Portfolio</h1>
+            <h1><span class="title">// </span>Projects</h1>
          </header><!-- .page-header -->
 
 
@@ -28,13 +28,13 @@ get_header(); ?>
                <?php if ( has_post_thumbnail() ) : ?>
                <li>
                      
-                        <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
+                        <div><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
          <?php the_post_thumbnail( 'medium' ); ?>
-      <?php endif; ?></a>
+      <?php endif; ?></a></div>
                      <?php endif; ?>
-                     <span class="project-preview"><h2><?php the_title(); ?></h2>
+                     <div class="project-preview"><h2><?php the_title(); ?></h2>
                      <?php echo CFS()->get('project_intro'); ?>
-                     <span class="btn"><a href="<?php the_permalink(); ?>">Read more...</span></a></span>
+                     <span class="btn"><a href="<?php the_permalink(); ?>">See details</a></span></div>
                </li>
             
                </ul>

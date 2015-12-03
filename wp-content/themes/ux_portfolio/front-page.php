@@ -37,6 +37,11 @@ get_header(); ?>
       <section id="portfolio" class="content-area">
       </section>
 
+      <div class="grey-bg">
+      <section id="whitney-gallery" class="content-area">
+        <?php echo do_shortcode( '[LBSP id=100]' ); ?>
+      </section></div>
+
       <section id="contact" class="content-area">
       <h1><span class="title">// </span>Contact</h1>
       <?php echo do_shortcode( '[contact-form-7 id="19" title="Contact form 1"]' ); ?>
@@ -62,8 +67,14 @@ get_header(); ?>
 
 				<div class="review-content">
 					<?php echo CFS()->get( 'review_content' ); ?>
-					<p><span class="reviewer-name">&ndash; <?php the_title(); ?>&#44; </span><span class="reviewer-creds"><?php echo esc_html( CFS()->get( 'job_title' ) ); ?><?php echo CFS()->get( 'company' ); ?></p>
+					<p><span class="reviewer-name">&ndash; <?php the_title(); ?>&#44; </span>
+						<span class="reviewer-creds"><?php echo esc_html( CFS()->get( 'job_title ' ) ); ?><span class="company-link"><?php echo CFS()->get( 'company_website' ); ?></span></p>
 				</div>
+
+                        
+
+
+
 			</li>
 		<?php endforeach; wp_reset_postdata(); ?>
 	    </ul>

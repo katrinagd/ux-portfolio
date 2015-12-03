@@ -43,7 +43,7 @@
      'menu_position'       => 5,
      'menu_icon'           => 'dashicons-images-alt2',
      'can_export'          => true,
-     'has_archive'         => 'portfolio',
+     'has_archive'         => 'projects',
      'exclude_from_search' => false,
      'publicly_queryable'  => true,
      'capability_type'     => 'post',

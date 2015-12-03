@@ -50,8 +50,19 @@
    .reviewer-name {
       font-weight: bold;
    }
+   .company-link{
+      
+      a {
+         text-decoration: none;
+         color: #fff;
+      }
+   }
 }
 
+.grey-bg{
+   background-color: #4A4A4A;
+   margin: 0 auto;
+}
 
 // Skiills page About
 
@@ -77,30 +88,40 @@
 
 // Projects page
 
-.project{
-   list-style: none;
+.project {
+   margin-left: 0;
+   padding-left: 0;   
+   
+   li{
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
    width: 100%;
+   align-items: center;
+   
+   div{
+      width: 50%;
+   }
+   }
 }
 
-// .project-image{
+.project-image{
    
       
-// }
-// .project-preview{
+}
+.project-preview{
 
-//    ul{
-//    margin-left: 0;
-//    padding-left: 20px;
-// }
+   ul{
 
-// .btn {
+   margin-left: 0;
+   padding-left: 0;
+}
 
-// }
+.btn {
 
-// }
+}
+
+}
 
 
 /* Media queries */

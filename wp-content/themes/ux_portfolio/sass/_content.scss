@@ -13,13 +13,39 @@ body {
 		padding-top: $base__space-unit * 2;
 		padding-bottom: $base__space-unit * 2;
 		margin: 0 auto;
-		max-width: 960px;
+		margin-left: 4%;
+		// max-width: 960px;
 		padding-left: 2.5%;
 		padding-right: 2.5%;
   
 	}
 
 } 
+
+/*Button*/
+
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  color: #E2D1A6;
+  font-size: 16px;
+  background: #030303;
+  padding: 8px 25px 8px 25px;
+  text-decoration: none;
+  a{
+  	text-decoration: none;
+  	color: #E2D1A6;
+  }
+}
+
+.btn:hover {
+  background: #4A4A4A;
+  text-decoration: none;
+  color: #E2D1A6;
+}
 
 /* Posts and pages */
 

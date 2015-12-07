@@ -6,7 +6,7 @@
   left: 0;
   top: 0;
   z-index: 100;
-  background-color: #ffffff;
+  background-color: #ccc;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
 
@@ -21,7 +21,8 @@
 
 }
 
-// 
+
+
 .main-navigation {
 	clear: both;
 	width: 100%;
@@ -47,7 +48,7 @@
 		display: inline-block;
 		line-height: 26px;
 		a {
-		padding: ($base__space-unit / 2) $base__space-unit;
+		padding: 1em;
 		color: #4A4A4A;
 		font-weight: 400;
 		text-decoration: none;

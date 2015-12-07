@@ -756,7 +756,8 @@ object {
     font-family: 'Open Sans', sans-serif;
     line-height: 2; }
   .resume .fa-linkedin-square {
-    color: #E2D1A6; }
+    color: #E2D1A6;
+    font-size: 36px; }
 
 .teal-bg {
   background: #2D6B7A; }
@@ -771,9 +772,11 @@ object {
 
 .line {
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 15px;
   border-bottom: 3px solid #D0A947;
-  max-width: 400px; }
+  max-width: 400px;
+  padding-bottom: 0;
+  margin-bottom: 10px; }
 
 .project {
   margin-left: 0;
@@ -842,7 +845,7 @@ object {
   left: 0;
   top: 0;
   z-index: 100;
-  background-color: #ffffff;
+  background-color: #ccc;
   opacity: 0.8;
   filter: alpha(opacity=80);
   /* For IE8 and earlier */ }
@@ -869,7 +872,7 @@ object {
     display: inline-block;
     line-height: 26px; }
     .main-navigation li a {
-      padding: 0.75em 1.5em;
+      padding: 1em;
       color: #4A4A4A;
       font-weight: 400;
       text-decoration: none;

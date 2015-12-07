@@ -109,6 +109,7 @@
 	}
 }
 
+
 .logo-big {
     width: 100px;
     margin: 0 auto;
@@ -147,12 +148,6 @@
   .fixed-nav.under-admin-bar {
     top: 46px;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .fixed-nav.under-admin-bar {
-    top: 32px;
-   }
   .logo-big{
 	height: 0;
 	overflow: hidden;
@@ -161,5 +156,12 @@
   .logo-small.hide{
 	display: inline-block;
 }
+}
+
+@media only screen and (min-width: 768px) {
+  .fixed-nav.under-admin-bar {
+    top: 32px;
+   }
+  
 
 }

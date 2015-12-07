@@ -16,7 +16,7 @@ get_header(); ?>
  *  -->
  <div class="technical">
 <h1><span class="title">// </span>Technical skills</h1>
-<div class="line"></div>
+<div class="skills">
 <?php
             $softargs = array( 
               'post_type'=>'skill',
@@ -33,14 +33,15 @@ get_header(); ?>
               setup_postdata( $post ); ?>
             
               
-               <div>
-                  <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+               
+                  <div class="column-skill"><?php the_title( '<h2 class="entry-title line">', '</h2>' ); ?>
                   <?php echo CFS()->get( 'skill_name' ); ?>
-                   <?php echo CFS()->get( 'skill_description' ); ?>
-               </div><!-- .entry-content -->            
+                   <?php echo CFS()->get( 'skill_description' ); ?></div>
+              <!-- .entry-content -->            
   
           <?php endforeach; 
           wp_reset_postdata(); ?>
+           </div>
 </div>
 </div>
 <!-- 
@@ -50,8 +51,8 @@ get_header(); ?>
  <div class="teal-bg">
    <div class="content-area soft">
     <h1><span class="title">// </span>Soft  skills</h1> 
-    <div class="line"></div>
-          <?php
+    <div class="skills">
+             <?php
             $softargs = array( 
               'post_type'=>'skill',
               'posts_per_page' => 7,
@@ -67,15 +68,15 @@ get_header(); ?>
               setup_postdata( $post ); ?>
             
               
-               <div>
-                  <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+               <div class="column-skill">
+                  <?php the_title( '<h2 class="entry-title line">', '</h2>' ); ?>
                   <?php echo CFS()->get( 'skill_name' ); ?>
                    <?php echo CFS()->get( 'skill_description' ); ?>
                </div><!-- .entry-content -->            
    
           <?php endforeach; 
           wp_reset_postdata(); ?>
-
+</div>
         </div>   
 
           

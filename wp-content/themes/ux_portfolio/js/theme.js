@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
     var $window = $(window),
         $mainNav = $('.main-navigation'), // nav wrapper element
 	    stickyNavTop = $mainNav[0].offsetHeight;
-        console.log($mainNav)
+        // console.log($mainNav)
     // A helper function to check whether nav should be fixed
     var stickyNav = function () {
         var scrollTop = $window.scrollTop();
@@ -45,12 +45,6 @@ jQuery(document).ready(function($){
                  $('.logo-big').removeClass('hide');
 			}
 		}
-// logo show/hide...
-
-
-
-
-
 
 	};
 
@@ -61,50 +55,6 @@ jQuery(document).ready(function($){
 	$window.scroll(function () {
 		stickyNav();
 	});
-
-// scrollscrolling effect
-
-// $(document).ready(function(){
-//   $('#navigation a, #fixedbar a').on('click', function(e) {
-//     e.preventDefault();
-//   });
-  
-//   $(window).on('scroll',function() {
-//     var scrolltop = $(this).scrollTop();
- 
-//     if(scrolltop >= 215) {
-//       $('#fixedbar').fadeIn(250);
-//     }
-    
-//     else if(scrolltop <= 210) {
-//       $('#fixedbar').fadeOut(250);
-//     }
-//   });
-// });
-
-// var lastScrollTop = 0;
-
-// $('.logo-small').addClass('hide');
-// //$('.logo-big').addClass('hide');
-
-// $(window).scroll(function (event) {
-    
-//     var st = $(this).scrollTop();
-    
-//     if (st > 0) {
-//         if (st > lastScrollTop) {
-//             // downscroll code
-//             // $('.logo-small').removeClass('hide')
-//         } else {
-//             // uproll code
-//             // $('.logo-small').removeClass('show');
-//         }
-//     } 
-//     lastScrollTop = st;
-// });
-
-
-
 
 
 });

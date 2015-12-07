@@ -18,32 +18,23 @@ get_header(); ?>
             ?>
             <h1><span class="title">// </span>Projects</h1>
          </header><!-- .page-header -->
+       
+        <ul class="project disc">
+         
+         <?php $args = array( 'post_type' => 'project','project-type' =>'featured', 'orderby' => 'menu-order' );
+         $loop = new WP_Query( $args );
+         while ( $loop->have_posts() ) : $loop->the_post(); global $project; ?>
+         <li>
+         <div class="project-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a></div>  
+         <div class="project-preview"><h2><?php the_title(); ?></h2>  
+         <div class="project_intro"><?php echo CFS()->get('project_intro'); ?></div>
+         <span class="btn"><a href="<?php the_permalink(); ?>">See details</a></span></div>
+         </li>         
+      <?php endwhile;?>
+      
+      </ul>
 
-
-<?php /* Start the Loop */ ?>
-         <?php while ( have_posts() ) : the_post(); ?>
-
-            <ul class="project">
-                
-               <?php if ( has_post_thumbnail() ) : ?>
-               <li>
-                     
-                        <div><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
-         <?php the_post_thumbnail( 'medium' ); ?>
-      <?php endif; ?></a></div>
-                     <?php endif; ?>
-                     <div class="project-preview"><h2><?php the_title(); ?></h2>
-                     <?php echo CFS()->get('project_intro'); ?>
-                     <span class="btn"><a href="<?php the_permalink(); ?>">See details</a></span></div>
-               </li>
-            
-               </ul>
-               
-               
-                     
-            
-
-         <?php endwhile; ?>
+      </section>
 
          <?php the_posts_navigation(); ?>
 

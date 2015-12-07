@@ -31,7 +31,9 @@ h1 {
 	    font-weight: bolder;
 	    color: black;
 	}
-
+h3, h2 {
+	text-transform: uppercase;
+}
 
 .title {
 	color: #D0A947 ;
@@ -45,6 +47,7 @@ p {
 	margin-bottom: $base__space-unit;
 	font-weight: lighter;
 	line-height: 2;
+	font-family: "Nunito";
 }
 
 dfn, cite, em, i {

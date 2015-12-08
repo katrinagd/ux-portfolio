@@ -26,6 +26,11 @@
 
 .testimonials {
 
+// .bx-wrapper, .bx-viewport {
+//     height: auto !important;
+// }
+   
+
    .review-content{ 
    }
 
@@ -36,14 +41,14 @@
       margin-left: 0;
       margin-bottom: 0;
       width: 100%;
-      // max-width: 800px;
+      
    }
 
    li {
-      flex: 1 0 50%;
+      // flex: 1 0 50%;
       display: flex;
       padding: $base__space-unit;
-      max-width: 49%;
+      // max-width: 49%;
    }
 
    img {
@@ -66,7 +71,7 @@
    .company-link{
       
       a {
-         text-decoration: none;
+         // text-decoration: none;
          color: #fff;
       }
    }
@@ -104,6 +109,7 @@
    .fa-linkedin-square{
 
    color: #E2D1A6;
+   font-size: 36px;
 }
 }
 
@@ -134,9 +140,11 @@
 
 .line{
    margin-top: 0;
-   padding-top: 0;
+   padding-top: 15px;
    border-bottom: 3px solid #D0A947;
    max-width: 400px;
+   padding-bottom: 0;
+   margin-bottom: 10px;
    
 
 }

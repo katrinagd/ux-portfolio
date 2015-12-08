@@ -91,9 +91,8 @@ get_header(); ?>
             
               
                
-                  <div class="column-skill"><?php the_title( '<h2 class="entry-title line">', '</h2>' ); ?>
-                  <?php echo CFS()->get( 'skill_name' ); ?>
-                   <?php echo CFS()->get( 'skill_description' ); ?></div>
+                  <div class="column-skill"><?php the_title( '<h3 class="entry-title line">', '</h3>' ); ?>
+                  <?php echo CFS()->get( 'skill_description' ); ?></div>
               <!-- .entry-content -->            
   
           <?php endforeach; 
@@ -126,9 +125,8 @@ get_header(); ?>
             
               
                <div class="column-skill">
-                  <?php the_title( '<h2 class="entry-title line">', '</h2>' ); ?>
-                  <?php echo CFS()->get( 'skill_name' ); ?>
-                   <?php echo CFS()->get( 'skill_description' ); ?>
+                  <?php the_title( '<h3 class="entry-title line">', '</h3>' ); ?>
+                  <?php echo CFS()->get( 'skill_description' ); ?>
                </div><!-- .entry-content -->            
    
           <?php endforeach; 

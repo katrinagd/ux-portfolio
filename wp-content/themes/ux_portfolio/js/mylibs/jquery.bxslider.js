@@ -27,13 +27,14 @@
 		captions: false,
 		ticker: false,
 		tickerHover: false,
-		adaptiveHeight: false,
+		adaptiveHeight: true,
 		adaptiveHeightSpeed: 500,
 		video: false,
 		useCSS: true,
 		preloadImages: 'visible',
 		responsive: true,
 		slideZIndex: 50,
+		slideWidth: 100
 		wrapperClass: 'bx-wrapper',
 
 		// TOUCH

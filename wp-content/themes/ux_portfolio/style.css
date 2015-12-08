@@ -700,14 +700,10 @@ object {
   width: 100%; }
 
 .testimonials li {
-  -webkit-flex: 1 0 50%;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5em;
-  max-width: 49%; }
+  padding: 1.5em; }
 
 .testimonials img {
   margin-right: 1.5em;
@@ -725,7 +721,6 @@ object {
   font-weight: bold; }
 
 .testimonials .company-link a {
-  text-decoration: none;
   color: #fff; }
 
 .bx-clone {
@@ -845,7 +840,7 @@ object {
   left: 0;
   top: 0;
   z-index: 100;
-  background-color: #ccc;
+  background-color: #ffffff;
   opacity: 0.8;
   filter: alpha(opacity=80);
   /* For IE8 and earlier */ }

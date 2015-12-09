@@ -33,16 +33,12 @@ jQuery(document).ready(function($){
                 
             } else {
                 $mainNav.addClass('fixed-nav');
-                 $('.logo-small').removeClass('hide');
-                 $('.logo-big').addClass('hide');
 			}
 		} else {
 		    if ( $('body').hasClass('logged-in') ) {
 				$mainNav.removeClass('under-admin-bar fixed-nav');
 			} else {
 				$mainNav.removeClass('fixed-nav');
-                 $('.logo-small').addClass('hide');
-                 $('.logo-big').removeClass('hide');
 			}
 		}
 

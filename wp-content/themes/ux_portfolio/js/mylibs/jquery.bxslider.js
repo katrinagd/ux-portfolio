@@ -34,7 +34,7 @@
 		preloadImages: 'visible',
 		responsive: true,
 		slideZIndex: 50,
-		slideWidth: 100
+		slideWidth: 100,
 		wrapperClass: 'bx-wrapper',
 
 		// TOUCH

@@ -6,6 +6,7 @@
 
 .see-all{
    float: right;
+
    a {
        font-family: 'Oswald', sans-serif;
        text-transform: uppercase;
@@ -15,8 +16,7 @@
 
 
 .gallery-bg {
-	background:
-   url('../../images/portfolio-banner.jpg') fixed center no-repeat;
+   background: url('../../images/portfolio-banner.jpg') fixed center no-repeat;
    height: 250px;
    background-size: 100%;
    color: white;
@@ -26,12 +26,8 @@
 
 .testimonials {
 
-// .bx-wrapper, .bx-viewport {
-//     height: auto !important;
-// }
-   
-
-   .review-content{ 
+   .review-content{
+      margin-top: 1rem;
    }
 
    ul {
@@ -41,14 +37,13 @@
       margin-left: 0;
       margin-bottom: 0;
       width: 100%;
-      
    }
 
    li {
-      // flex: 1 0 50%;
       display: flex;
       padding: $base__space-unit;
-      // max-width: 49%;
+      flex-direction: column;
+      align-items: center;
    }
 
    img {
@@ -68,14 +63,13 @@
    .reviewer-name {
       font-weight: bold;
    }
-   .company-link{
-      
+   .company
+
       a {
-         // text-decoration: none;
          color: #fff;
       }
-   }
 }
+
 
 
 
@@ -93,39 +87,52 @@
 
 // Resume
 
-.resume{
+.resume {
    display: flex;
    flex-direction: column;
    margin-left: auto;
    margin-right: auto;
    align-items: center;
-  justify-content: center;
-   a{
+   justify-content: center;
+
+   a {
       color: #ffffff;
       font-size: 26px;
       font-family: 'Open Sans', sans-serif;
       line-height: 2;
    }
-   .fa-linkedin-square{
 
-   color: #E2D1A6;
-   font-size: 36px;
+   .fa-linkedin-square {
+      color: #E2D1A6;
+      font-size: 36px;
+   }
 }
+
+// Skills page
+
+.post-type-archive-skill {
+
+   .content-area {
+      width: 100%;
+      margin: 0;
+      padding: 3rem 0;
+   }
+
+   .title {
+      margin-left: 2rem;
+   }
 }
 
-// Skiills page 
-
-.technical {
-
-}
 .teal-bg {
 	background: #2D6B7A;
+
 	.soft {
 		color: #fff;
+
 		h1{
-		color: #fff;
+            color: #fff;
 		}
-}
+    }
 }
 
 .skills{
@@ -133,8 +140,7 @@
   .column-skill{
    width: 100%;
    max-width: 420px;
-
-}
+   }
 }
  
 
@@ -145,33 +151,34 @@
    max-width: 400px;
    padding-bottom: 0;
    margin-bottom: 10px;
-   
-
 }
 
 // Projects page
 
 .project {
    margin-left: 0;
-   padding-left: 0; 
+   padding-left: 0;
+}
 
+.project-container {
+   margin-bottom: 5rem;
 }
 
 .project-img{
-margin-top: 5%;
-margin-bottom: 2%;
+   margin-top: 5%;
+   margin-bottom: 2%;
 }
 .project_intro{
-margin-bottom: 5%;
-margin-left: 4%;
+   margin-bottom: 5%;
+   margin-left: 4%;
 }
 .project-preview{
-   ul{
-   margin-left: 0;
-   padding-left: 0;
-   margin-bottom: 0;
-   list-style: disc !important;
-}
+   ul {
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: disc;
+   }
 }
 
  
@@ -182,25 +189,20 @@ margin-left: 4%;
 @media screen and (min-width: 768px) {
 
 .project {
-   li{
 
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   width: 95%;
-   align-items: center;
-   margin-bottom: 5%;
-   margin-left: 0;
-   margin-right: 0;
-   
-   .project-preview{
-      width: 50%;
-       ul{
-      list-style: disc !important;
-   }
-   }
-  
-   
+   .project-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 95%;
+      align-items: center;
+      margin-bottom: 5%;
+      margin-left: 0;
+      margin-right: 0;
+
+      .project-preview{
+         width: 50%;
+      }
    }
 }
 
@@ -211,10 +213,21 @@ margin-left: 4%;
    justify-content: space-between;
    flex-wrap: wrap;
    flex-flow: row wrap;
-   .column-skill{
-   width: 49%;
-}
-}
+   margin: 0 auto;
 
+   .column-skill{
+      width: 49%;
+   }
+}
+   .testimonials {
+      li {
+         flex-direction: row;
+         align-items: initial;
+      }
+
+      .review-content {
+         margin-top: 0;
+      }
+   }
 }
 

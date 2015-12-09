@@ -32,8 +32,8 @@ height: auto;
 
 .bx-slider li {
 
-margin: 0px;
-padding: 0px;
+margin: 0;
+padding: 0;
 }
 
 /** THEME
@@ -58,7 +58,7 @@ padding: 0px;
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	width: 100%;
 }
 

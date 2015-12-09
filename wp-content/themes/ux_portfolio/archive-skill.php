@@ -10,6 +10,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
         <h1><span class="title">// </span>About me</h1>
+
         <div class="grey-bg">
             <section id="whitney-gallery">
               <?php echo do_shortcode( '[LBSP id=100]' ); ?>

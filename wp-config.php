@@ -23,13 +23,13 @@
 define('DB_NAME', 'ux_portfolio');
 
 /** MySQL database username */
-define('DB_USER', 'admin');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'UGyWueCq8ma6DFvV');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'localhost:8889');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

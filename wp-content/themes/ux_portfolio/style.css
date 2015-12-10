@@ -685,6 +685,9 @@ object {
   background-size: 100%;
   color: white; }
 
+.gold {
+  color: #d0a947; }
+
 .testimonials .review-content {
   margin-top: 1rem; }
 
@@ -733,6 +736,9 @@ object {
 a {
   color: #fff; }
 
+.testimonials a:visited {
+  color: #fff; }
+
 .bx-clone {
   width: 100%; }
 
@@ -772,6 +778,9 @@ a {
 .post-type-archive-skill .title {
   margin-left: 2rem; }
 
+.post-type-archive-skill .skills {
+  margin-left: 6.5%; }
+
 .teal-bg {
   background: #2D6B7A; }
   .teal-bg .soft {
@@ -782,6 +791,9 @@ a {
 .skills .column-skill {
   width: 100%;
   max-width: 420px; }
+
+.skills .title {
+  margin-left: 2rem; }
 
 .line {
   margin-top: 0;

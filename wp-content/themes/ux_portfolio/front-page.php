@@ -155,6 +155,9 @@ get_header(); ?>
 
 <section id="contact" class="content-area">
     <h1><span class="title">// </span>Contact</h1>
+    <p>A simple <span class="gold">hello</span> could lead to a million things.
+Let’s see where it takes <span class="gold">us</span>.</p>
+
     <?php echo do_shortcode( '[contact-form-7 id="19" title="Contact form 1"]' ); ?>
 </section>
 

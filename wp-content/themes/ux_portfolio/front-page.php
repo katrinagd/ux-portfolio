@@ -84,7 +84,7 @@ get_header(); ?>
             <?php
                 $softargs = array(
                   'post_type'=>'skill',
-                  'posts_per_page' => 8,
+                  'posts_per_page' => 20,
                   'tax_query' => array (
                       array(
                          'taxonomy' => 'skill-type',
@@ -147,7 +147,7 @@ get_header(); ?>
 
 <div class="grey-bg">
     <section class="resume content-area">
-        <a href="<?php echo esc_url( 'http://whitneylaw.ca/wp-content/uploads/2015/12/Whitney_Law_Resume_UX_Designer.pdf' ); ?>"><?php printf( esc_html( 'Download my resume' )); ?></a>
+        <a href="<?php echo esc_url( 'http://whitneylaw.ca/resume/Whitney_Law_Resume_UX_Designer.pdf' ); ?>"><?php printf( esc_html( 'Download my resume' )); ?></a>
         <a href="<?php echo esc_url( 'https://www.linkedin.com/in/whitneylaww' ); ?>"><i class="fa fa-linkedin-square"></i></a>
     </section>
 </div>

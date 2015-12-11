@@ -28,7 +28,7 @@ get_header(); ?>
             <?php
                 $softargs = array(
                   'post_type'=>'skill',
-                  'posts_per_page' => 8,
+                  'posts_per_page' => 20,
                   'tax_query' => array (
                       array(
                          'taxonomy' => 'skill-type',
@@ -64,7 +64,7 @@ get_header(); ?>
             <?php
             $softargs = array(
                 'post_type'=>'skill',
-                'posts_per_page' => 7,
+                'posts_per_page' => 20,
                 'tax_query' => array (
                     array(
                         'taxonomy' => 'skill-type',

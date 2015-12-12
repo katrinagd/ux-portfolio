@@ -553,6 +553,13 @@ body .content-area {
   padding-left: 2.5%;
   padding-right: 2.5%; }
 
+body .content-area-contact {
+  width: 95%;
+  margin: 0 auto;
+  margin-left: 4%;
+  padding-left: 2.5%;
+  padding-right: 2.5%; }
+
 /*Button*/
 .btn {
   border-radius: 4px;
@@ -745,6 +752,9 @@ a {
 .grey-bg {
   background-color: #4A4A4A;
   margin: 0 auto; }
+
+#post-10 h1 {
+  display: none; }
 
 .resume {
   display: -webkit-flex;

@@ -14,12 +14,19 @@
    }
 }
 
-
 .gallery-bg {
-   background: url('../../images/portfolio-banner.jpg') fixed center no-repeat;
+   background: url('../../images/portfolio-banner.jpg') no-repeat center center;
+   background-attachment:scroll;
    height: 250px;
-   background-size: 100%;
-   color: white;
+   width: 100%;
+     
+   background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+
 }
 
 .gold {
@@ -201,6 +208,14 @@
 
 /* Tablet and up */
 @media screen and (min-width: 768px) {
+
+
+   .gallery-bg {
+   background: url('../../images/portfolio-banner.jpg') fixed center no-repeat;
+   height: 250px;
+   background-size: 100%;
+   color: white;
+}
 
 .project {
 
